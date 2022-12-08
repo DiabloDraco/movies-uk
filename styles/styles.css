@@ -252,7 +252,7 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 19px;
-        text-align: center;
+        text-align: left;
         color: #000000;
         margin-bottom: 15px;
     }
@@ -378,6 +378,9 @@
         background: none;
         margin: 0;
         padding: 0;
+
+        position: absolute;
+        top: 0;
     }
 
     .home__right__back-btn img {
@@ -390,8 +393,10 @@
 
     .home__right__heading {
         margin-bottom: 0;
-        display: flex;
-        margin-right: auto;
+        display: block;
+        /* margin-right: auto; */
+        text-align: center;
+        align-items: center !important;
     }
 
     .navigation-mobile {
