@@ -424,6 +424,9 @@
     }
 
     .navigation__item-icon {
+        width: 25px;
+        height: 22px;
+        object-fit: contain;
         margin-left: auto;
         margin-right: auto;
     }
