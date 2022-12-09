@@ -320,14 +320,15 @@
         row-gap: 20px;
         margin-bottom: 30px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
     .home__right__video-wrapper {
         background: #BDBDBD;
         border-radius: 10px;
-        width: 100px;
+        max-width: 140px;
+        width: 30vw;
         height: 86px;
     }
 
