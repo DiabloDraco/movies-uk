@@ -20,12 +20,18 @@
     background: #2D1FE8;
     border-radius: 20px;
     display: flex;
-    width: 148px;
+    width: 154px;
     height: 36px;
     flex-direction: row;
     align-items: flex-start;
     padding: 8px 32px;
     margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.home__left__join-btn:hover {
+    color: white;
+    box-shadow: 0 0 20px #2c1fe88c;
 }
 
 .home__left__login-btn {
@@ -43,10 +49,17 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    background: #D7D6EE;
+    /* background: #D7D6EE; */
     border: 1px solid #2D1FE8;
     border-radius: 20px;
     margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.home__left__login-btn:hover {
+    background: #2D1FE8;
+    color: white;
+    box-shadow: 0 0 20px #2c1fe88c;
 }
 
 .home__left-line {
@@ -61,12 +74,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: flex-start;
+    
 }
 
 .home__left__list-item {
-    width: 172px;
+    width: auto;
     height: 36px;
     padding: 8px 32px;
+    transition: 0.3s;
 }
 
 .home__left-item-link {
@@ -78,6 +94,7 @@
 .home__left__list-item:hover {
     background: rgba(190, 161, 166, 0.15);
     border-radius: 10px;
+    
 }
 
 .home__left__link__text {
@@ -202,6 +219,11 @@
     flex-direction: row;
     justify-content: center;
     padding: 8px 16px;
+    transition: 0.3s;
+}
+
+.home__right__add-btn:hover {
+    box-shadow: 0 0 20px #2c1fe88c;
 }
 
 .home__right__add-icon {
@@ -252,7 +274,7 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 19px;
-        text-align: center;
+        text-align: left;
         color: #000000;
         margin-bottom: 15px;
     }
@@ -379,6 +401,9 @@
         background: none;
         margin: 0;
         padding: 0;
+
+        position: absolute;
+        top: 0;
     }
 
     .home__right__back-btn img {
@@ -391,8 +416,10 @@
 
     .home__right__heading {
         margin-bottom: 0;
-        display: flex;
-        margin-right: auto;
+        display: block;
+        /* margin-right: auto; */
+        text-align: center;
+        align-items: center !important;
     }
 
     .navigation-mobile {
