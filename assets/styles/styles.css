@@ -491,6 +491,116 @@
     color: #000000;
 }
 
+/* STARS STYLES */
+
+.stars__heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+    gap: 25px;
+}
+
+.stars__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.active__star {
+    color: #FFFFFF;
+    background: #0A1640;
+    border-radius: 15px;
+    padding: 4px 8px;
+}
+
+.stars__search-bar {
+    margin-bottom: 49px;
+    position: relative;
+}
+
+
+
+.stars__search-input {
+    background: #E0E0E0;
+    border-radius: 5px;
+    max-width: 684px;
+    width: 100%;
+    padding: 8px 0 8px 31px;
+    border: none;
+    outline: none;
+}
+
+.stars__search-bar::before {
+    content: "";
+    display: inline-block;
+    background-image: url("./../images/searchIcon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 8px;
+    z-index: 9999;
+    width: 15px;
+    height: 15px;
+}
+
+.stars__search-cancel {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    border: none;
+    background: none;
+    margin-left: 16px;
+}
+
+.stars__finded-wrapper {}
+
+.stars__finded__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: start;
+    color: #000000;
+    margin-bottom: 29px;
+}
+
+.stars__finded-list {
+    gap: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.stars__finded-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.stars__finded__item-icon {}
+
+.stars__finded__item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 5px;
+    color: #000000;
+}
+
 @media only screen and (max-width: 600px) {
     /* MOBILE */
 
@@ -803,5 +913,11 @@
         border-radius: 0;
         max-width: 600px;
         width: 100%;
+    }
+
+    /* STARS MOBILE STYLES */
+
+    .stars__search-cancel {
+        margin-left: 11px;
     }
 }
