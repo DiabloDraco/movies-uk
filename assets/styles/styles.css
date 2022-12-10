@@ -646,13 +646,20 @@
         display: none;
     }
 
+    .home__left-line {
+        width: 95vw;
+    }
+
+    .menu-heading {
+        width: 100vw;
+    }
+
     .home__right__back-btn {
         background: none;
         margin: 0;
         padding: 0;
     }
     .home__right__back-btn2 {
-        
         position: absolute;
         top: 0;
     }
@@ -698,6 +705,8 @@
     .navigation__item-link {
         display: flex;
         flex-direction: column;
+        background: none;
+        border: none;
     }
 
     .navigation__item-icon {
