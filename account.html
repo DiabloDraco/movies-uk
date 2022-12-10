@@ -23,7 +23,7 @@
         <div class="container home__container d-flex justify-content-between">
             <div class="home__left d-none d-sm-flex flex-column">
                 <a class="home__left__join-btn" href="" type="button" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
+                    data-bs-target="#exampleModal">
                     Join for free
                 </a>
                 <a class="home__left__login-btn" href="">
@@ -81,74 +81,76 @@
                 </nav>
             </div>
             <div class="home__right">
-                <div class="home__right__heading-wrapper">
-                    <button class="home__right__back-btn d-block border-0">
-                        <img class="home__right__back-btn" src="./assets/images/back.svg" alt="back icon" width="30"
-                            height="30">
-                    </button>
+                <div class="home__mobile-wrapper">
+                    <div class="home__right__heading-wrapper">
+                        <button class="home__right__back-btn d-block border-0">
+                            <img class="home__right__back-btn" src="./assets/images/back.svg" alt="back icon" width="30"
+                                height="30">
+                        </button>
+                    </div>
+                    <div class="account__middle-wrapper d-flex flex-column flex-sm-row align-items-center">
+                        <img class="account__middle-img" src="./assets/images/avaProf.png" width="70" height="70"
+                            alt="">
+                        <div class="account__middle__text-wrapper d-flex">
+                            <h3 class="account__middle-last">
+                                Name Lastname
+                            </h3>
+                            <div class="account__middle__edit-wrapper d-flex justify-content-between position-relative">
+                                <p class="account__middle-desc">
+                                    Description
+                                </p>
+                                <button class="account__middle__edit-btn">
+                                    <img src="./assets/images/pencil.svg" width="17.28" height="17.28" alt="pen">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="navigation-mobile d-sm-none position-fixed bottom-0">
-            <nav class="navigation-nav">
-                <ul class="navigation__list">
-                    <li class="navgiation__item">
-                        <a class="navigation__item-link" href="">
-                            <img class="navigation__item-icon" width="25" height="22"
-                                src="./assets/images/mobile-nav1.svg" alt="icon">
-                            <p class="navigation__item-text">
-                                Головна
-                            </p>
-                        </a>
-                    </li>
-                    <li class="navgiation__item">
-                        <a class="navigation__item-link" href="">
-                            <img class="navigation__item-icon" width="25" height="22"
-                                src="./assets/images/mobile-nav2.svg" alt="icon">
-                            <p class="navigation__item-text">
-                                Головна
-                            </p>
-                        </a>
-                    </li>
-                    <li class="navgiation__item">
-                        <a class="navigation__item-link" href="">
-                            <img class="navigation__item-icon" width="25" height="22"
-                                src="./assets/images/mobile-nav3.svg" alt="icon">
-                            <p class="navigation__item-text">
-                                Головна
-                            </p>
-                        </a>
-                    </li>
-                    <li class="navgiation__item">
-                        <a class="navigation__item-link" href="">
-                            <img class="navigation__item-icon" width="25" height="22"
-                                src="./assets/images/mobile-nav4.svg" alt="icon">
-                            <p class="navigation__item-text">
-                                Головна
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="modal__close-wrapper d-flex justify-content-end ">
-                            <button type="button" class="modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="./assets/images/cancel.svg" width="30" height="30" alt="">
-                            </button>
+                <div class="account__category-wrapper">
+                    <div class="account__category__heading-wrapper d-flex align-items-center justify-content-between">
+                        <h3 class="account__category-heading">
+                            Романтичне
+                        </h3>
+                        <p class="account__category-text">
+                            15 фільмів
+                        </p>
+                    </div>
+                    <div class="account__category__videos-wrapper d-flex row-cols-2 row-cols-sm-4">
+                        <div class="account__category__video">
+                            Назва фільму
                         </div>
-                        <div class="modal__text-wrapper">
-                            <h3 class="text-center fw-bold">Welcome, Guest!</h3>
-                            <p class="text-center fw-normal mt-4">In order to make the merge with a star please log in
-                                or sign up</p>
+                        <div class="account__category__video">
+                            Назва фільму
                         </div>
-                        <div class="modal__buttons-wrapper d-flex align-items-center">
-                            <a class="modal__log-btn" href="">Log in with Google</a>
-                            <a class="modal__sign-btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
-                                href="">Sign up</a>
+                        <div class="account__category__video d-none d-sm-flex">
+                            Назва фільму
+                        </div>
+                        <div class="account__category__video d-none d-sm-flex">
+                            Назва фільму
+                        </div>
+                    </div>
+                </div>
+                <div class="account__category-wrapper">
+                    <div class="account__category__heading-wrapper d-flex align-items-center justify-content-between">
+                        <h3 class="account__category-heading">
+                            Кліпи
+                        </h3>
+                        <p class="account__category-text">
+                            15 фільмів
+                        </p>
+                    </div>
+                    <div class="account__category__videos-wrapper d-flex row-cols-2 row-cols-sm-4">
+                        <div class="account__category__video">
+                            Назва фільму
+                        </div>
+                        <div class="account__category__video">
+                            Назва фільму
+                        </div>
+                        <div class="account__category__video d-none d-sm-flex">
+                            Назва фільму
+                        </div>
+                        <div class="account__category__video d-none d-sm-flex">
+                            Назва фільму
                         </div>
                     </div>
                 </div>

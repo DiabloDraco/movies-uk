@@ -398,6 +398,101 @@
     color: #FFFFFF;
 }
 
+/* ACCOUNT STYLES */
+
+
+.account__middle-wrapper {
+    margin-top: 49px;
+    margin-bottom: 50px;
+    max-width: 838px;
+    width: 100%;
+}
+
+.account__middle-img {
+    margin-right: 20px;
+}
+
+.account__middle__text-wrapper {
+    flex-direction: column;
+    align-items: start;
+}
+
+.account__middle-last {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #0A1640;
+    margin-bottom: 18px;
+}
+
+.account__middle-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.account__middle__edit-btn {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+
+.account__category-wrapper {}
+
+.account__category__heading-wrapper {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.account__category-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.account__category-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.account__category__videos-wrapper {
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.account__category__video {
+    background: #BDBDBD;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    height: 156px;
+    color: #000000;
+}
+
 @media only screen and (max-width: 600px) {
     /* MOBILE */
 
@@ -620,5 +715,47 @@
         text-align: center;
         color: #000000;
         margin-top: 3px;
+    }
+
+    /* ACCOUNT STYLES */
+    .account__category-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        padding-right: 15px;
+    }
+
+    .account__middle__edit-btn {
+        margin-left: 0;
+        position: absolute;
+        right: -130px;
+    }
+
+    .account__middle-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .account__category__video {
+        width: 46vw;
+    }
+
+    .account__middle-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .home__mobile-wrapper {
+        background: rgba(190, 161, 166, 0.15);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 10px 10px;
     }
 }
