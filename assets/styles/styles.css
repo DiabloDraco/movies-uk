@@ -650,7 +650,9 @@
         background: none;
         margin: 0;
         padding: 0;
-
+    }
+    .home__right__back-btn2 {
+        
         position: absolute;
         top: 0;
     }
@@ -765,7 +767,7 @@
         border-radius: 0px 0px 10px 10px;
     }
 
-    .home__right__back-btn {
+    .home__right__back-btn2 {
         top: 28px;
         left: 10px;
     }
