@@ -659,6 +659,7 @@
         margin: 0;
         padding: 0;
     }
+
     .home__right__back-btn2 {
         position: absolute;
         top: 0;
@@ -784,5 +785,21 @@
     .account__middle-wrapper {
         margin-top: 0;
         margin-bottom: 80px;
+    }
+
+    .modal-body {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .modal-body2 {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+    
+    .modal-content {
+        border-radius: 0;
     }
 }

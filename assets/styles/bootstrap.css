@@ -5306,7 +5306,7 @@ textarea.form-control-lg {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: var(--bs-modal-margin);
+  margin: 0;
   pointer-events: none;
 }
 .modal.fade .modal-dialog {
