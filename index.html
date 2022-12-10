@@ -20,7 +20,16 @@
 
     <main>
         <div class="container home__container d-flex justify-content-between">
-            <div class="home__left d-none d-sm-flex flex-column">
+            <div class="home__left flex-column">
+                <div class="home__right__heading-wrapper d-sm-none">
+                    <button class="home__right__back-btn d-sm-none d-block border-0">
+                        <img class="home__right__back-btn" src="./assets/images/back.svg" alt="back icon" width="30"
+                            height="30">
+                    </button>
+                    <h2 class="home__right__heading text-center menu-heading">
+                        Про нас
+                    </h2>
+                </div>
                 <a class="home__left__join-btn" href="" type="button" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     Join for free
@@ -31,8 +40,8 @@
                 <span class="home__left-line"></span>
                 <nav>
                     <ul class="home__left__nav-list">
-                        <li class="home__left__list-item  active-sidebar">
-                            <a class="home__left-item-link" href="">
+                        <li class="home__left__list-item">
+                            <a class="home__left-item-link" href="./index.html">
                                 <img class="home__left__icon" src="./assets/images/nav1.svg" alt="nav icon" width="18"
                                     height="18">
                                 <p class="home__left__link__text">
@@ -67,8 +76,8 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="home__left__list-item">
-                            <a class="home__left-item-link" href="./about.html">
+                        <li class="home__left__list-item active-sidebar">
+                            <a class="home__left-item-link" href="#">
                                 <img class="home__left__icon" src="./assets/images/nav5.svg" alt="nav icon" width="18"
                                     height="18">
                                 <p class="home__left__link__text">
@@ -320,7 +329,7 @@
                             <img class="navigation__item-icon" width="25" height="22"
                                 src="./assets/images/mobile-nav2.svg" alt="icon">
                             <p class="navigation__item-text">
-                                Головна
+                                Додати сцену
                             </p>
                         </a>
                     </li>
@@ -329,18 +338,18 @@
                             <img class="navigation__item-icon" width="25" height="22"
                                 src="./assets/images/mobile-nav3.svg" alt="icon">
                             <p class="navigation__item-text">
-                                Головна
+                                Моє кіно
                             </p>
                         </a>
                     </li>
                     <li class="navgiation__item">
-                        <a class="navigation__item-link" href="">
+                        <button class="navigation__item-link menu border-0" href="">
                             <img class="navigation__item-icon" width="25" height="22"
                                 src="./assets/images/mobile-nav4.svg" alt="icon">
                             <p class="navigation__item-text">
-                                Головна
+                                Меню
                             </p>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>
