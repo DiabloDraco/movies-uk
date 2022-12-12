@@ -1374,6 +1374,7 @@ body {
         height: 100%;
         appearance: none;
         -webkit-appearance: none;
+        z-index: -1;
     }
 
     .teasers__on {
