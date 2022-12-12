@@ -829,6 +829,10 @@ body {
     border-radius: 20px;
 }
 
+.teasers__nonactive-item {
+    color: #BEA1A6;
+}
+
 .teasers__video {
     width: 100%;
     max-height: 585px;
@@ -930,7 +934,6 @@ body {
     z-index: 9999;
 }
 
-.teasers__right__item-icon {}
 
 .teasers__right__item-text {
     font-style: normal;
