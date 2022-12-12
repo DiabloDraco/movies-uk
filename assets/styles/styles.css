@@ -1372,6 +1372,7 @@ body {
         border-radius: 0;
         max-height: 100vh;
         height: 100%;
+        -webkit-appearance: none;
     }
 
     .teasers__on {
