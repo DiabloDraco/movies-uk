@@ -7,6 +7,8 @@ let progress = document.querySelector(".teasers__video-progress")
 let time = document.querySelector(".video__current-time")
 let range = document.querySelector(".teasers__video-range")
 
+video.src = `${video.src}#t=0.1`
+
 if (window.outerWidth < 900) {
     menu.addEventListener("click", () => {
         if (document.querySelector(".home__left").style.display == "none") {
