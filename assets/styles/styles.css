@@ -943,7 +943,7 @@ body {
     text-align: center;
     color: #000000;
 }
-/*********** Baseline, reset styles ***********/
+
 .teasers__video-range[type="range"] {
     -webkit-appearance: none;
     appearance: none;
@@ -952,14 +952,13 @@ body {
     width: 100%;
     margin-right: 7px;
     z-index: 99999;
-  }
-  
-  /* Removes default focus */
-  .teasers__video-range[type="range"]:focus {
-    outline: none;
-  }
+}
 
-  .teasers__video-back {
+.teasers__video-range[type="range"]:focus {
+    outline: none;
+}
+
+.teasers__video-back {
     position: absolute;
     left: 0;
     display: inline-block;
@@ -968,59 +967,53 @@ body {
     width: 100%;
     background-color: #bea1a6;
     border-radius: 5px;
-  }
-  
-  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
-  /* slider track */
-  .teasers__video-range[type="range"]::-webkit-slider-runnable-track {
+}
+
+.teasers__video-range[type="range"]::-webkit-slider-runnable-track {
     background-color: transparent;
     border-radius: 0.5rem;
     height: 2px;
-  }
-  
-  /* slider thumb */
-  .teasers__video-range[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+}
+
+.teasers__video-range[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
-    margin-top: 0.5px; /* Centers thumb on the track */
+    margin-top: 0.5px;
     background-color: #2d1fe8;
     border-radius: 0.5rem;
     height: 1px;
     width: 1px;
-  }
-  
-  .teasers__video-range[type="range"]:focus::-webkit-slider-thumb {
+}
+
+.teasers__video-range[type="range"]:focus::-webkit-slider-thumb {
     outline: none;
-    outline-offset:0;
-  }
-  
-  /*********** Firefox styles ***********/
-  /* slider track */
-  .teasers__video-range[type="range"]::-moz-range-track {
+    outline-offset: 0;
+}
+
+.teasers__video-range[type="range"]::-moz-range-track {
     background-color: #bea1a6;
     border-radius: 0.5rem;
     height: 2px;
-  }
-  
-  /* slider thumb */
-  .teasers__video-range[type="range"]::-moz-range-thumb {
+}
+
+.teasers__video-range[type="range"]::-moz-range-thumb {
     display: none;
     background-color: transparent;
-    border: none; /*Removes extra border that FF applies*/
+    border: none;
     border-radius: 0.5rem;
     height: 0;
     width: 0;
-  }
+}
 
-  .teasers__video-range::-moz-range-progress {
+.teasers__video-range::-moz-range-progress {
     background-color: #43e5f7;
-  }
-  
-  
-  .teasers__video-range[type="range"]:focus::-moz-range-thumb{
+}
+
+
+.teasers__video-range[type="range"]:focus::-moz-range-thumb {
     outline: none;
     outline-offset: none;
-  }
+}
 
 @media only screen and (max-width: 600px) {
     /* MOBILE */
