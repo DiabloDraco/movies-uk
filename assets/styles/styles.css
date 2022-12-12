@@ -892,21 +892,12 @@ body {
     color: #FFFFFF;
 }
 
-.teasers__nav-wrapper {}
-
-.teasers__right-nav {}
-
-
-
-
 .teasers__right-list {
     margin-left: 23px;
     display: flex;
     flex-direction: column;
     gap: 34px;
 }
-
-.teasers__right-item {}
 
 .teasers__right-link {
     display: flex;
