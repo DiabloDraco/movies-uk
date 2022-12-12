@@ -601,6 +601,125 @@
     color: #000000;
 }
 
+/* TICKET STYLES */
+
+.ticket__heading {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #f0f7ef;
+}
+
+
+.slider-range {
+    width: 100%;
+    position: relative;
+}
+
+input[type="range"] {
+    -webkit-appearance: none !important;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #FF0000 0%, #00FF19 99.56%);
+    border: 1px solid #97c68b;
+    border-radius: 10px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+input[type="range"]:hover {
+    background-color: #b2d5aa;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 0px 4px #2D1FE8;
+    transition: all 0.5s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: inset 0px 0px 0px 6px #2D1FE8;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    box-shadow: inset 0px 0px 0px px #2D1FE8;
+}
+
+#rangevalue {
+    text-align: center;
+    font-family: "Quantico", sans-serif;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 10px 0px;
+    width: 100%;
+    color: #579E81;
+}
+
+.slider__range__num-start {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    left: 0;
+}
+
+.slider__range__num-end {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    right: 0;
+}
+
+.ticket__btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #2D1FE8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    border: none;
+    margin: 0 auto;
+    transition: 0.3s all ease;
+    margin-top: 86px;
+}
+
+.ticket__btn:hover {
+    background: #2D1FE8;
+    color: white;
+    box-shadow: 0 0 20px #2c1fe88c;
+}
+
 @media only screen and (max-width: 600px) {
     /* MOBILE */
 

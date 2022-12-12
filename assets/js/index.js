@@ -12,3 +12,5 @@ if (window.outerWidth < 900) {
         }
     })
 }
+
+document.querySelector("#range")
