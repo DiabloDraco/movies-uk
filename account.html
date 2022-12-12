@@ -111,8 +111,9 @@
                                     Description
                                 </p>
                                 <button class="account__middle__edit-btn" data-bs-toggle="modal"
-                                data-bs-target="#profileModal">
-                                    <img src="./assets/images/pencil.svg" width="17.28" height="17.28" alt="pen">
+                                    data-bs-target="#profileModal" type="button">
+                                    <img data-bs-toggle="modal" data-bs-target="#profileModal" type="button"
+                                        src="./assets/images/pencil.svg" width="17.28" height="17.28" alt="pen">
                                 </button>
                             </div>
                         </div>
@@ -173,12 +174,16 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="profile__modal__heading-wrapper d-flex justify-content-between align-items-center">
-                            <button class="profile__modal-close" data-bs-target="#profileModal" data-bs-toggle="modal">Відмінити</button>
+                            <button class="profile__modal-close" data-bs-target="#profileModal"
+                                data-bs-toggle="modal">Відмінити</button>
                             <h3 class="profile__modal-heading">Редагувати профіль</h3>
-                            <button class="profile__modal-done" data-bs-target="#profileModal" data-bs-toggle="modal">Зберегти</button>
+                            <button class="profile__modal-done" data-bs-target="#profileModal"
+                                data-bs-toggle="modal">Зберегти</button>
                         </div>
-                        <div class="profile__modal__middle-wrapper d-flex flex-column justify-content-center align-items-center">
-                            <img class="profile__modal__middle-icon" src="./assets/images/avaProf.png" width="70" height="70" alt="ava">
+                        <div
+                            class="profile__modal__middle-wrapper d-flex flex-column justify-content-center align-items-center">
+                            <img class="profile__modal__middle-icon" src="./assets/images/avaProf.png" width="70"
+                                height="70" alt="ava">
                             <button class="profile__modal__middle-change">Змінити картинку</button>
                         </div>
                         <div class="profile__modal__bottom-wrapper">
@@ -189,7 +194,9 @@
                             <hr style="margin-top: 9px; margin-bottom: 20px;">
                             <div class="profile__modal__name-wrapper w-100 d-flex justify-content-between">
                                 <p class="profile__modal__name-text">Опис</p>
-                                <p style="max-width: 280px;" class="profile__modal__name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <p style="max-width: 280px;" class="profile__modal__name-text">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. </p>
                             </div>
                         </div>
                     </div>

@@ -807,6 +807,10 @@ input[type="range"]::-webkit-slider-thumb:active {
         gap: 115px;
     }
 
+    .home__mobile-wrapper {
+        z-index: 999999999999;
+    }
+
     .home__right {
         max-width: 738px;
         width: 100%;
@@ -1051,6 +1055,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     .account__middle__edit-btn {
         margin-left: 0;
         position: absolute;
+        z-index: 999999999999999999999999;
         right: -130px;
     }
 
