@@ -1039,4 +1039,10 @@ input[type="range"]::-webkit-slider-thumb:active {
     .stars__search-cancel {
         margin-left: 11px;
     }
+
+    /* TICKET */
+
+    .ticket__right-back img {
+        margin-right: 0;
+    }
 }
