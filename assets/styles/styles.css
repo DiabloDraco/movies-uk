@@ -1340,18 +1340,38 @@ body {
 
     /* TEASERS STYLES */
 
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+
+    }
+
     .teasers__container {
         padding: 0;
+    }
+
+    .teasers__middle-wrapper {
+        max-height: 100vh;
     }
 
     .teasers__video-wrapper {
         overflow: hidden;
         width: 100vw;
         height: 100vh;
+        max-height: 100vh;
     }
 
     .teasers__video {
         border-radius: 0;
+        max-height: 100vh;
+        height: 100%;
     }
 
     .teasers__on {
@@ -1379,6 +1399,7 @@ body {
     .teasers__video__range-wrapper {
         width: 80%;
     }
+
     .teasers__range {
         max-width: 100%;
         width: 50%;
