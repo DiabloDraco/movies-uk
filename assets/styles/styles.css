@@ -1345,7 +1345,8 @@ body {
     }
 
     .teasers__video-wrapper {
-        overflow-y: hidden;
+        overflow: hidden;
+        width: 100vw;
         height: 100vh;
     }
 
@@ -1355,6 +1356,7 @@ body {
 
     .teasers__on {
         padding-bottom: 66px;
+        width: 100%;
     }
 
     .teasers__nav {
@@ -1364,5 +1366,21 @@ body {
 
     .teasers__nav .navigation__item-text {
         color: #FFFFFF;
+    }
+
+    .teasers__video-progress {
+        max-width: 95%;
+    }
+
+    .teasers__video-back {
+        max-width: 95%;
+    }
+
+    .teasers__video__range-wrapper {
+        width: 80%;
+    }
+    .teasers__range {
+        max-width: 100%;
+        width: 50%;
     }
 }

@@ -41,7 +41,7 @@ video.addEventListener("timeupdate", progressVideo)
 
 function progressVideo() {
     progress.style.width = `${(video.currentTime / video.duration) * 100}%`
-
+    range.value = 0
     let minutes = Math.floor(video.currentTime / 60)
 
     if (minutes < 10) {
