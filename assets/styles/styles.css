@@ -1391,11 +1391,15 @@ body {
     }
 
     .teasers__video-progress {
-        max-width: 90%;
+        max-width: 95%;
+    }
+
+    .teasers__video__range-wrapper {
+        margin-right: 0;
     }
 
     .teasers__video-back {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     .teasers__video__range-wrapper {
