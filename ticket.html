@@ -41,7 +41,7 @@
                 <nav>
                     <ul class="home__left__nav-list">
                         <li class="home__left__list-item active-sidebar">
-                            <a class="home__left-item-link" href="./index.html">
+                            <a class="home__left-item-link" href="./myScene.html">
                                 <img class="home__left__icon" src="./assets/images/nav1.svg" alt="nav icon" width="18"
                                     height="18">
                                 <p class="home__left__link__text">
@@ -100,10 +100,18 @@
                 </div>
                 <div class="ticket__wrapper">
                     <div class="slider-range">
-                        <input class="tickets__range" id="range" type="range" min="0" max="100" onchange="rangevalue.value=value" />
+                        <input class="tickets__range" id="range" step="25" type="range" min="0" max="100" />
+                        <span class="range__val-25 range__val">
+                            25
+                        </span>
+                        <span class="range__val-50 range__val">
+                            50
+                        </span>
+                        <span class="range__val-75 range__val">
+                            75
+                        </span>
                         <p class="slider__range__num-start">00</p>
                         <p class="slider__range__num-end">100</p>
-                        <output id="rangevalue">50</output>
                     </div>
                     <button class="ticket__btn">Купити квиток</button>
                 </div>
@@ -113,7 +121,7 @@
                 <nav class="navigation-nav">
                     <ul class="navigation__list">
                         <li class="navgiation__item">
-                            <a class="navigation__item-link" href="">
+                            <a class="navigation__item-link" href="./index.html">
                                 <img class="navigation__item-icon" width="25" height="22"
                                     src="./assets/images/mobile-nav1.svg" alt="icon">
                                 <p class="navigation__item-text">
@@ -122,9 +130,10 @@
                             </a>
                         </li>
                         <li class="navgiation__item">
-                            <a class="navigation__item-link" href="">
+                            <a class="navigation__item-link" href="./scene.html">
                                 <img class="navigation__item-icon" width="25" height="22"
                                     src="./assets/images/mobile-nav2.svg" alt="icon">
+
                                 <p class="navigation__item-text">
                                     Додати сцену
                                 </p>
@@ -134,6 +143,7 @@
                             <a class="navigation__item-link" href="./movies.html">
                                 <img class="navigation__item-icon" width="25" height="22"
                                     src="./assets/images/mobile-nav3.svg" alt="icon">
+
                                 <p class="navigation__item-text">
                                     Моє кіно
                                 </p>

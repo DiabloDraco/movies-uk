@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/normolize.css">
+    <link rel="stylesheet" href="./assets/styles/settings.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Movies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="container home__container d-flex justify-content-between">
+            <div class="home__left flex-column">
+                <div class="home__right__heading-wrapper d-sm-none">
+                    <button class="home__right__back-btn d-sm-none d-block border-0">
+                        <img class="home__right__back-btn" src="./assets/images/back.svg" alt="back icon" width="30"
+                            height="30">
+                    </button>
+                    <h2 class="home__right__heading text-center menu-heading">
+                        Меню
+                    </h2>
+                </div>
+                <a class="home__left__join-btn" href="" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Join for free
+                </a>
+                <a class="home__left__login-btn" href="">
+                    Login
+                </a>
+                <span class="home__left-line"></span>
+                <nav>
+                    <ul class="home__left__nav-list">
+                        <li class="home__left__list-item active-sidebar">
+                            <a class="home__left-item-link" href="./myScene.html">
+                                <img class="home__left__icon" src="./assets/images/nav1.svg" alt="nav icon" width="18"
+                                    height="18">
+                                <p class="home__left__link__text">
+                                    Мої сцени
+                                </p>
+                            </a>
+                        </li>
+                        <li class="home__left__list-item">
+                            <a class="home__left-item-link" href="./movies.html">
+                                <img class="home__left__icon" src="./assets/images/nav2.svg" alt="nav icon" width="18"
+                                    height="18">
+                                <p class="home__left__link__text">
+                                    Моє кіно
+                                </p>
+                            </a>
+                        </li>
+                        <li class="home__left__list-item">
+                            <a class="home__left-item-link" href="./stars.html">
+                                <img class="home__left__icon" src="./assets/images/nav3.svg" alt="nav icon" width="18"
+                                    height="18">
+                                <p class="home__left__link__text">
+                                    Ставай зіркою
+                                </p>
+                            </a>
+                        </li>
+                        <li class="home__left__list-item">
+                            <a class="home__left-item-link" href="./support.html">
+                                <img class="home__left__icon" src="./assets/images/nav4.svg" alt="nav icon" width="18"
+                                    height="18">
+                                <p class="home__left__link__text">
+                                    Підтримка. FAQ
+                                </p>
+                            </a>
+                        </li>
+                        <li class="home__left__list-item">
+                            <a class="home__left-item-link" href="./about.html">
+                                <img class="home__left__icon" src="./assets/images/nav5.svg" alt="nav icon" width="18"
+                                    height="18">
+                                <p class="home__left__link__text">
+                                    Про нас
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="home__right">
+                <div class="home__right__heading-wrapper">
+                    <button class="home__right__back-btn d-sm-none d-block border-0">
+                        <img class="home__right__back-btn" src="./assets/images/back.svg" alt="back icon" width="30"
+                            height="30">
+                    </button>
+                    <h2 class="home__right__heading">
+                        Мої сцени
+                    </h2>
+                </div>
+                <div class="home__right__categories-wrapper">
+                    <div class="home__right__category">
+                        <h3 class="home__right__category__heading">
+                            Романтичні
+                        </h3>
+                        <div class="home__right__category-tags">
+                            <ul class="home__right__tags__list">
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Blowkiss
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-red">
+                                    <a class="home__right-link" href="">
+                                        Smile
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Blowkiss
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-red">
+                                    <a class="home__right-link" href="">
+                                        Smile
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-red">
+                                    <a class="home__right-link" href="">
+                                        Smile
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="home__right__category__videos-wrapper d-flex align-items-center flex-wrap row-cols-3 row-cols-sm-auto">
+                            <a class="home__right__video-link" href="">
+                                <div class="home__right__video-wrapper">
+                                    <img class="home__right__video-img" src="./assets/images/play.svg" alt="">
+                                </div>
+                            </a>
+                            <a class="home__right__video-link" href="">
+                                <div class="home__right__video-wrapper">
+                                    <img class="home__right__video-img" src="./assets/images/play.svg" alt="">
+                                </div>
+                            </a>
+                            <a class="home__right__video-link" href="">
+                                <div class="home__right__video-wrapper">
+                                    <img class="home__right__video-img" src="./assets/images/play.svg" alt="">
+                                </div>
+                            </a>
+                            <a class="home__right__video-link" href="">
+                                <div class="home__right__video-wrapper">
+                                    <img class="home__right__video-img" src="./assets/images/play.svg" alt="">
+                                </div>
+                            </a>
+                            <a class="home__right__video-link d-block d-sm-none" href="">
+                                <div class="home__right__video-wrapper">
+                                    <img class="home__right__video-img" src="./assets/images/play.svg" alt="">
+                                </div>
+                            </a>
+                            <a class="home__right__video-link d-block d-sm-none" href="">
+                                <div class="home__right__video-wrapper">
+                                    <img class="home__right__video-img" src="./assets/images/play.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__right__categories-wrapper">
+                    <div class="home__right__category">
+                        <h3 class="home__right__category__heading">
+                            Кумедні
+                        </h3>
+                        <div class="home__right__category-tags">
+                            <ul class="home__right__tags__list">
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Blowkiss
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-red">
+                                    <a class="home__right-link" href="">
+                                        Smile
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Blowkiss
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-red">
+                                    <a class="home__right-link" href="">
+                                        Smile
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-red">
+                                    <a class="home__right-link" href="">
+                                        Smile
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Look
+                                    </a>
+                                </li>
+                                <li class="home__right__tag tag-green">
+                                    <a class="home__right-link" href="">
+                                        Loving look
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a style="margin-bottom: 50px;" class="home__right__add-btn" href="">
+                            <img class="home__right__add-icon" src="./assets/images/home__scene.svg" alt="icon"
+                                width="18" height="18">
+                            <p class="home__right__add-text">
+                                Додати сцену
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-mobile d-sm-none position-fixed bottom-0">
+            <nav class="navigation-nav">
+                <ul class="navigation__list">
+                    <li class="navgiation__item">
+                        <a class="navigation__item-link" href="./index.html">
+                            <img class="navigation__item-icon" width="25" height="22"
+                                src="./assets/images/mobile-nav1.svg" alt="icon">
+                            <p class="navigation__item-text">
+                                Головна
+                            </p>
+                        </a>
+                    </li>
+                    <li class="navgiation__item">
+                        <a class="navigation__item-link" href="./scene.html">
+                            <img class="navigation__item-icon" width="25" height="22"
+                                src="./assets/images/mobile-nav2.svg" alt="icon">
+
+                            <p class="navigation__item-text">
+                                Додати сцену
+                            </p>
+                        </a>
+                    </li>
+                    <li class="navgiation__item">
+                        <a class="navigation__item-link" href="./movies.html">
+                            <img class="navigation__item-icon" width="25" height="22"
+                                src="./assets/images/mobile-nav3.svg" alt="icon">
+
+                            <p class="navigation__item-text">
+                                Моє кіно
+                            </p>
+                        </a>
+                    </li>
+                    <li class="navgiation__item">
+                        <button class="navigation__item-link menu border-0" href="">
+                            <img class="navigation__item-icon" width="25" height="22"
+                                src="./assets/images/mobile-nav4.svg" alt="icon">
+                            <p class="navigation__item-text">
+                                Меню
+                            </p>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Vertically centered modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal__close-wrapper d-flex justify-content-end ">
+                            <button type="button" class="modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./assets/images/cancel.svg" width="30" height="30" alt="">
+                            </button>
+                        </div>
+                        <div class="modal__text-wrapper">
+                            <h3 class="text-center fw-bold">Welcome, Guest!</h3>
+                            <p class="text-center fw-normal mt-4">In order to make the merge with a star please log in
+                                or sign up</p>
+                        </div>
+                        <div class="modal__buttons-wrapper d-flex align-items-center">
+                            <a class="modal__log-btn" href="">Log in with Google</a>
+                            <a class="modal__sign-btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                href="">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body2">
+                        <div class="modal__close-wrapper d-flex justify-content-end ">
+                            <button type="button" class="modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./assets/images/cancel.svg" width="30" height="30" alt="">
+                            </button>
+                        </div>
+                        <div class="modal__text-wrapper2">
+                            <h3 class="text-center fw-bold">Welcome, Guest!!</h3>
+                        </div>
+                        <div
+                            class="modal__second__input-wrapper d-flex align-items-center justify-content-center flex-column">
+                            <input class="modal__input2" type="email" placeholder="Email">
+                            <input class="modal__input2" type="password" placeholder="Password">
+                        </div>
+                        <p class="modal__second-text">
+                            Or sign in with Google
+                        </p>
+                        <p class="modal__already-text d-flex justify-content-center text-center">
+                            Alreade have an account? <a class="modal__second-sign" href="">Sign in</a>
+                        </p>
+                        <div class="modal2__btn-wrapper">
+                            <a class="modal2__log-btn" href="">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

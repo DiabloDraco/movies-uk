@@ -1,4 +1,4 @@
-let menu = document.querySelector(".menu")
+let menu = document.querySelectorAll(".menu")
 let video = document.querySelector(".teasers__video")
 let play = document.querySelector(".teasers__start-btn")
 let playImg = document.querySelector(".teasers__play-img")
@@ -6,32 +6,45 @@ let play2 = document.querySelector(".teasers__play-btn")
 let progress = document.querySelector(".teasers__video-progress")
 let time = document.querySelector(".video__current-time")
 let range = document.querySelector(".teasers__video-range")
-
-video.src = `${video.src}#t=0.1`
+let white = document.querySelectorAll(".white")
+let black = document.querySelectorAll(".black")
+let navText = document.querySelectorAll(".navigation__item-text")
 
 if (window.outerWidth < 900) {
-    menu.addEventListener("click", () => {
-        if (document.querySelector(".home__left").style.display == "none") {
-            document.querySelector(".home__left").style.display = "block"
-            document.querySelector(".home__right").style.display = "none"
-            document.querySelector(".home__container").style.overflowX = "hidden"
-        } else {
-            document.querySelector(".home__left").style.display = "none"
-            document.querySelector(".home__right").style.display = "block"
-        }
-    })
+    for (let i = 0; i < menu.length; i++) {
+        menu[i].addEventListener("click", () => {
+            if (document.querySelector(".home__left").style.display == "none") {
+                document.querySelector(".home__left").style.display = "block"
+                document.querySelector(".home__right").style.display = "none"
+                document.querySelector(".home__container").style.overflowX = "hidden"
+                if (white) {
+                    for (let i = 0; i < white.length; i++) {
+                        white[i].style.display = "none"
+                        black[i].style.display = "inline-block"
+                        navText[i].style.color = "black"
+                    }
+                }
+            } else {
+                document.querySelector(".home__left").style.display = "none"
+                document.querySelector(".home__right").style.display = "block"
+                if (white) {
+                    for (let i = 0; i < white.length; i++) {
+                        white[i].style.display = "inline-block"
+                        black[i].style.display = "none"
+                        navText[i].style.color = "white"
+                    }
+                }
+            }
+        })
+    }
 }
-
-play.addEventListener("click", playVideo)
-video.addEventListener("click", playVideo)
-play2.addEventListener("click", playVideo)
 
 function playVideo() {
     if (video.paused) {
         video.play()
         play.style.display = "none"
         playImg.src = "./assets/images/pause.png"
-    }else{
+    } else {
         video.pause()
         play2.style.display = "block"
         play.style.display = "inline-block"
@@ -39,7 +52,6 @@ function playVideo() {
     }
 }
 
-video.addEventListener("timeupdate", progressVideo)
 
 function progressVideo() {
     progress.style.width = `${(video.currentTime / video.duration) * 100}%`
@@ -52,7 +64,7 @@ function progressVideo() {
 
     let seconds = Math.floor(video.currentTime % 60)
 
-    
+
     if (seconds < 10) {
         seconds = "0" + seconds
     }
@@ -62,7 +74,57 @@ function progressVideo() {
 
 
 function changeRange() {
-    video.currentTime = (range.value * video.duration) / 100 
+    video.currentTime = (range.value * video.duration) / 100
 }
 
-range.addEventListener("change" , changeRange)
+if (video) {
+    video.src = `${video.src}#t=0.1`
+    range.addEventListener("change", changeRange)
+    video.addEventListener("timeupdate", progressVideo)
+    play.addEventListener("click", playVideo)
+    video.addEventListener("click", playVideo)
+    play2.addEventListener("click", playVideo)
+}
+
+function clearInput() {
+    document.querySelector(".stars__search-input").value = null
+}
+
+if (document.querySelector(".stars__search-cancel")) {
+    document.querySelector(".stars__search-cancel").addEventListener("click", clearInput)
+}
+
+let rangeTickets = document.querySelector(".tickets__range")
+
+function setDots() {
+    let vals = document.querySelectorAll(".range__val")
+    if (rangeTickets.value == "25") {
+        vals[0].style.display = "block"
+        vals[1].style.display = "none"
+        vals[2].style.display = "none"
+    }
+    if (rangeTickets.value == "50") {
+        vals[1].style.display = "block"
+        vals[0].style.display = "none"
+        vals[2].style.display = "none"
+    }
+    if (rangeTickets.value == "75") {
+        vals[2].style.display = "block"
+        vals[0].style.display = "none"
+        vals[1].style.display = "none"
+    }
+    if (rangeTickets.value == "0") {
+        vals[2].style.display = "none"
+        vals[0].style.display = "none"
+        vals[1].style.display = "none"
+    }
+    if (rangeTickets.value == "100") {
+        vals[2].style.display = "none"
+        vals[0].style.display = "none"
+        vals[1].style.display = "none"
+    }
+}
+
+if (rangeTickets) {
+    rangeTickets.addEventListener("change" , setDots)
+}
