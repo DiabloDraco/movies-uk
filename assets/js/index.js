@@ -99,29 +99,54 @@ let rangeTickets = document.querySelector(".tickets__range")
 function setDots() {
     let vals = document.querySelectorAll(".range__val")
     if (rangeTickets.value == "25") {
-        vals[0].style.display = "block"
-        vals[1].style.display = "none"
-        vals[2].style.display = "none"
+        vals[0].classList.add("after__off")
+        vals[1].classList.remove("after__off")
+        vals[2].classList.remove("after__off")
+        document.querySelector(".range__val-0").classList.remove("after__off")
+        document.querySelector(".range__val-100").classList.remove("after__off")
+        vals[0].textContent = "25"
+        vals[1].textContent = null
+        vals[2].textContent = null
     }
     if (rangeTickets.value == "50") {
-        vals[1].style.display = "block"
-        vals[0].style.display = "none"
-        vals[2].style.display = "none"
+        vals[0].classList.remove("after__off")
+        vals[1].classList.add("after__off")
+        vals[2].classList.remove("after__off")
+        document.querySelector(".range__val-0").classList.remove("after__off")
+        document.querySelector(".range__val-100").classList.remove("after__off")
+        vals[1].textContent = "50"
+        vals[0].textContent = null
+        vals[2].textContent = null
     }
     if (rangeTickets.value == "75") {
-        vals[2].style.display = "block"
-        vals[0].style.display = "none"
-        vals[1].style.display = "none"
+        vals[0].classList.remove("after__off")
+        vals[1].classList.remove("after__off")
+        vals[2].classList.add("after__off")
+        document.querySelector(".range__val-0").classList.remove("after__off")
+        document.querySelector(".range__val-100").classList.remove("after__off")
+        vals[2].textContent = "75"
+        vals[0].textContent= null
+        vals[1].textContent = null
     }
-    if (rangeTickets.value == "0") {
-        vals[2].style.display = "none"
-        vals[0].style.display = "none"
-        vals[1].style.display = "none"
+    if (rangeTickets.value == "0" ) {
+        vals[0].classList.remove("after__off")
+        vals[1].classList.remove("after__off")
+        vals[2].classList.remove("after__off")
+        document.querySelector(".range__val-0").classList.add("after__off")
+        document.querySelector(".range__val-100").classList.remove("after__off")
+        vals[2].textContent = null
+        vals[0].textContent = null
+        vals[1].textContent = null
     }
     if (rangeTickets.value == "100") {
-        vals[2].style.display = "none"
-        vals[0].style.display = "none"
-        vals[1].style.display = "none"
+        vals[0].classList.remove("after__off")
+        vals[1].classList.remove("after__off")
+        vals[2].classList.remove("after__off")
+        document.querySelector(".range__val-0").classList.remove("after__off")
+        document.querySelector(".range__val-100").classList.add("after__off")
+        vals[2].style.display = null
+        vals[0].style.display = null
+        vals[1].style.display = null
     }
 }
 

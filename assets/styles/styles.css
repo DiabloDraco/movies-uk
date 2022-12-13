@@ -619,7 +619,6 @@
     align-items: center;
     text-align: center;
     color: #000000;
-    display: none;
 }
 
 .range__val-25::after {
@@ -630,9 +629,9 @@
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
-    margin-top: -34px;
+    margin-top: -22px;
     margin-left: 6px;
-    z-index: 9999999999999999999999999;
+    z-index: 9999999999999999995435349999999;
 }
 
 .range__val-50::after {
@@ -643,7 +642,7 @@
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
-    margin-top: -34px;
+    margin-top: -22px;
     margin-left: 6px;
     z-index: 9999999999999999999999999;
 }
@@ -656,7 +655,7 @@
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
-    margin-top: -34px;
+    margin-top: -22px;
     margin-left: 6px;
     z-index: 9999999999999999999999999;
 }
@@ -685,6 +684,10 @@
     margin-top: -35px;
     margin-left: 7px;
     z-index: 9999999999999999999999999;
+}
+
+.after__off::after {
+    display: none;
 }
 
 .range__val-25 {
