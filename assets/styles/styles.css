@@ -1239,14 +1239,23 @@
     margin-bottom: 15px;
 }
 
-.scene__left__list-item {}
-
-.scene__left__item-video {
-    background: #E0E0E0;
-    border: 3px solid #0A1640;
+.scene__left__list-item {
     border-radius: 5px;
     width: 55px;
     height: 63px;
+}
+
+.scene__item-border {
+    border: 3px solid #0A1640;
+    border-radius: 5px;
+}
+
+
+.scene__left__item-video {
+    background: #E0E0E0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .scene__left__bottom-progress {
