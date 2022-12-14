@@ -489,6 +489,15 @@
     max-width: 200px;
     height: 156px;
     color: #000000;
+    cursor: pointer;
+}
+
+.account__category__video-text {
+    display: none;
+}
+
+.account__category__video:hover .account__category__video-text {
+    display: flex;
 }
 
 /* STARS STYLES */
