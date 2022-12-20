@@ -144,9 +144,9 @@ function setDots() {
         vals[2].classList.remove("after__off")
         document.querySelector(".range__val-0").classList.remove("after__off")
         document.querySelector(".range__val-100").classList.add("after__off")
-        vals[2].style.display = null
-        vals[0].style.display = null
-        vals[1].style.display = null
+        vals[2].textContent = null
+        vals[1].textContent = null
+        vals[0].textContent = null
     }
 }
 
